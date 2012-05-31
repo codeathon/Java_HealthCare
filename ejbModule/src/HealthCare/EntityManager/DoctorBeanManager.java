@@ -16,6 +16,7 @@ import src.HealthCare.Interface.DoctorInterface;
  * @author rohit
  *
  */
+@SuppressWarnings("serial")
 public class DoctorBeanManager implements Serializable,DoctorInterface{
 	@PersistenceContext(unitName="entityBean")
 	EntityManager em;
