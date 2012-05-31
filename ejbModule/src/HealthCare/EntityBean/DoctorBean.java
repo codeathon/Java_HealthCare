@@ -43,6 +43,43 @@ public class DoctorBean {
 	
 	private Date doctorDateOfBirth;
 	
+	/**
+	 * @param doctorFirstName
+	 * @param doctorMName
+	 * @param doctorLastName
+	 * @param doctorFatherName
+	 * @param doctorMotherName
+	 * @param doctorSex
+	 * @param doctorPrivateCellNum
+	 * @param doctorHospitalNum
+	 * @param doctorAge
+	 * @param doctorDateOfBirth
+	 * @param doctorSpeciality
+	 * @param doctorDaysOfWork
+	 * @param doctorHoursOfWork
+	 */
+	public DoctorBean(String doctorFirstName, String doctorMName,
+			String doctorLastName, String doctorFatherName,
+			String doctorMotherName, char doctorSex, long doctorPrivateCellNum,
+			long doctorHospitalNum, int doctorAge, Date doctorDateOfBirth,
+			String doctorSpeciality, String doctorDaysOfWork,
+			int doctorHoursOfWork) {
+		super();
+		this.doctorFirstName = doctorFirstName;
+		this.doctorMName = doctorMName;
+		this.doctorLastName = doctorLastName;
+		this.doctorFatherName = doctorFatherName;
+		this.doctorMotherName = doctorMotherName;
+		this.doctorSex = doctorSex;
+		this.doctorPrivateCellNum = doctorPrivateCellNum;
+		this.doctorHospitalNum = doctorHospitalNum;
+		this.doctorAge = doctorAge;
+		this.doctorDateOfBirth = doctorDateOfBirth;
+		this.doctorSpeciality = doctorSpeciality;
+		this.doctorDaysOfWork = doctorDaysOfWork;
+		this.doctorHoursOfWork = doctorHoursOfWork;
+	}
+
 	private String doctorSpeciality;
 	
 	private String doctorDaysOfWork;
