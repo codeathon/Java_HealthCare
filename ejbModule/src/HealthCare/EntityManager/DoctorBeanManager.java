@@ -23,7 +23,9 @@ public class DoctorBeanManager implements Serializable,DoctorInterface{
 	
 	@Override
 	public void getDoctorInfo(int id) {
-		// TODO Auto-generated method stub
+		if(id < 0) {
+			throw new ArithmeticException("Id cannot be negative");
+		}
 		em.createNamedQuery("SELECT * FROM Doctor where id=?1");
 		
 	}
