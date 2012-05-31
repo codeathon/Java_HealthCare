@@ -17,3 +17,8 @@ EJB ( Enterprise Java Beans)
 EntityManager
 JPA ( Java Persistence API)
 JNDI (Java Naming and Directory Interface)
+
+Design is fairly simple and clean.
+2 Entity Beans:
+   PatientBean
+   DoctorBean

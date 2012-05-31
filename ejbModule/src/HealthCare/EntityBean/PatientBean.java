@@ -45,6 +45,27 @@ public class PatientBean implements Serializable {
 	
 	private long patientContactNumber;
 	
+	public PatientBean(String patientFirstName,
+			String patientMiddleName, String patientLastName,
+			String patientFatherName, String patientMotherName, int patientAge,
+			Date patientDateOfBirth, String patientAddressLine1,
+			String patientAddressLine2, String patientAddressLine3,
+			char patientSex, long patientContactNumber) {
+		super();
+		this.patientFirstName = patientFirstName;
+		this.patientMiddleName = patientMiddleName;
+		this.patientLastName = patientLastName;
+		this.patientFatherName = patientFatherName;
+		this.patientMotherName = patientMotherName;
+		this.patientAge = patientAge;
+		this.patientDateOfBirth = patientDateOfBirth;
+		this.patientAddressLine1 = patientAddressLine1;
+		this.patientAddressLine2 = patientAddressLine2;
+		this.patientAddressLine3 = patientAddressLine3;
+		this.patientSex = patientSex;
+		this.patientContactNumber = patientContactNumber;
+	}
+
 	public int getPatientId() {
 		return patientId;
 	}
